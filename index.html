@@ -334,7 +334,7 @@
 
     document.getElementById('addBtn').addEventListener('click', addItem);
     document.getElementById('clearBtn').addEventListener('click', clearChecked);
-    document.getElementById('newItem').addEventListener('keyup', e => {
+    document.getElementById('newItem').addEventListener('keydown', e => {
       if (e.key === 'Enter' && !e.isComposing) addItem();
     });
 
